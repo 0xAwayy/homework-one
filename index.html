@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Personal Website</title>
+    
+</head>
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"></a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutme.html">Fun Facts</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+    <div class="fbox">
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class="col-md-12 text-center" style="background: none;">
+                    <h1 style="color: white;" class="animated-text">whoami</h1>
+                    <p style="font-size:small; display:block; color: white;"><span class="wave">My</span> <span class="wave">name</span> <span class="wave">is</span> <span class="wave">Yonas</span> <span class="wave">Tadesse,</span> <span class="wave">I</span> <span class="wave">am</span> <span class="wave">a</span> <span class="wave">CS</span> <span class="wave">student</span> <span class="wave">interested</span> <span class="wave">in</span> <span class="wave">Reverse</span> <span class="wave">Engineering</span> <span class="wave">and</span> <span class="wave">Vulnerability</span> <span class="wave">Research</span></p>
+                </div>
+            <!-- </div> -->
+        </div>
+            
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class="col-md-6 text-center"></div>
+                    <p id="text" style="color: white; font-size: xx-small; text-align: center;">Made with ❤️ by Yonas Tadesse</p>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function waveText() {
+            let elems = document.getElementsByClassName("wave");
+            let delay = 10;
+
+            for (let i = 0; i < elems.length; ++i) {
+                elems[i].style.animation = "bounce 4s infinite";
+
+                await sleep(delay);
+            }
+        }
+
+        waveText();
+    </script>
+</body>
+</html>
